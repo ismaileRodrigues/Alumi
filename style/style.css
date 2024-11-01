@@ -441,7 +441,7 @@ footer .endereco {
 }
 footer .contatos  a,h3 {
    text-decoration: none;
-   color: #fcfcfc; 
+   color: #000000; 
    margin-left: 5%;
    
 
@@ -465,7 +465,7 @@ footer .contatos  a i {
     z-index: 1000;
     transition: all 0.5s ease;
     background-color: #13a23e;
-    color: white;
+    color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
     text-decoration: none;
