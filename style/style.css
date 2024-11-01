@@ -18,13 +18,61 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background-image: linear-gradient(#232323, #ffffff, #6a6969);
+  padding: 10px 20px;
+  z-index: 2;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #141212;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 4px;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.LogoInicio img {
+  width: 50px;
+  transition: transform 0.3s;
+}
+
+.LogoInicio img:hover {
+  transform: scale(1.2);
+}
+
+
+/* .navbar {
     position: fixed;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    background-image: linear-gradient( #232323, #a39292,  #6a6969);
+    background-image: linear-gradient( #232323, #ffffff,  #6a6969);
     padding: 5px;
     z-index: 2;
     width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .navbar p {
@@ -34,9 +82,9 @@ body {
 .navbar a {
     float: left;
     display: flex;
-    color: #f2f2f2;
+    color: #141212;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 14px 16px;
     text-decoration: none;
     transition: .5s;
@@ -57,6 +105,9 @@ body {
     width: 50px;
     height: 50px;
     transition: .5s;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
     
 }
 
@@ -74,7 +125,7 @@ body {
 
 .navbar img:hover {
     transform: scale(1.2);
-}
+} */
 
 /* banner */
 .banner_container {
@@ -221,33 +272,55 @@ MVV */
     background-position-x: center;
     width: 100%;
     height: 90vh;
+
+
 }
 
 .servicos_container {
+    max-width: 800px;
     display: flex;
+    margin: auto;
     flex-direction: column;
     margin-bottom: 5%;
+   align-items: center;
+   background-color: #333232;
+   color: #ddd;
+   margin-top: 20px;
+   border-radius: 10px;
+   
+ 
+}
+
+.servicos_container h1{
+    font-size: 41px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
    
 }
 
-.servicos_container h1 {
-    font-size: 41px;
+.servicos_container h2 {
+    font-size: 9;
     font-weight: normal;
     padding: 15px;
     text-align: center;
    
 }
 
-.servicos_container ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
+.servicos_container ul {
+    margin-bottom: 20px;
+
+ 
+
+
+}
 
 .servicos_container ul li {
    top: 5px;
    list-style: none;
+ 
+
 
 }
 
@@ -276,6 +349,7 @@ MVV */
     gap:15px;
     justify-content: center;
     padding: 10px;
+   
 }
 
 .galeria_container .image_container .image {
@@ -283,14 +357,18 @@ MVV */
     width: 350px;
     /* border: 7px solid#fdf200; */
     box-shadow:0 5px 15px #1c1a1a ;
+    border-radius: 10px;
+
+  
 }
 
 .galeria_container .image_container .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: .2s linear;
+    transition: .3s linear;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .galeria_container .image_container .image:hover img{
@@ -327,13 +405,15 @@ MVV */
    width: 750;
    height: 550px;
    object-fit: cover;
+   border-radius: 10px;
+
 }
 
 
 footer {
     margin-top: 20px;
     bottom: 0;
-    background-image: linear-gradient(  #6a6969, #a39292,#232323);
+    background-image: linear-gradient( #232323, #ffffff,  #6a6969);
     color: #eee;
     padding: 40px 0;
     width: 100%;
@@ -342,6 +422,7 @@ footer {
 }
 
 footer .data {
+    color: #000;
     display: flex;
 align-items: end;
 margin-top: 25px;
@@ -360,13 +441,13 @@ footer .endereco {
 }
 footer .contatos  a,h3 {
    text-decoration: none;
-   color: #eee; 
+   color: #fcfcfc; 
    margin-left: 5%;
    
 
 }
 footer .contatos  a i {
-    color: #ffffff; 
+    color: #000000; 
     background-color: #13a23e;
     padding: 5px;
     border-radius: 50%;
@@ -407,7 +488,7 @@ footer .contatos  a i {
 
 
 .redes-sociais i {
-    color: #f8f8f8;
+    color: #000000;
     padding: 15px;
     font-size: 35px;
     transition: .3s;

@@ -70,17 +70,19 @@ setTimeout(function() {
 const closeBtn = document.querySelector(".close-btn");
 const openBtn = document.querySelector(".open-btn");
 const navbar = document.querySelector(".navbar");
+const celular = document.querySelector("#celular");
 
 function openNav() {
-  document.querySelector('.navbar').style.top = '0';
+  document.querySelector('.navbar').style.left = '0';
   closeBtn.style.display = 'block'
   openBtn.style.display = 'none'
   navbar.style.display = 'flex'
+  celular.style.display = 'flex'
 
 
 }
 function closeNav() {
-  document.querySelector('.navbar').style.top = '-100%';
+  document.querySelector('.navbar').style.left = '-100%';
   closeBtn.style.display = 'none'
   openBtn.style.display = 'block'
 

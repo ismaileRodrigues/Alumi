@@ -10,30 +10,37 @@
 .navbar {
     display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 70%;
+    /* align-items: center; */
     height: 100%;
     margin: 0;
     padding: 0;
     position: fixed;
-    top: -50%;
-    height: 100%;
     transition: all 0.5s ease;
     background-color: #111111de;
 }
 
-
+.itensMenuCelular {
+   
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    /* justify-content: center; */
+    text-align: start;
+    align-items: center;
+}
 
 
 
 .navbar a {
+    width: 100%;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 2%;
     font-size: 1.2rem;
     display: flex;
-    text-align: center;
+
+    /* text-align: center; */
     align-items: center;
 }
 
@@ -267,6 +274,10 @@
     display: none;
     font-size: 2rem;
     color: #f20f0f;
+    background-image: linear-gradient( #232323, #ffffff,  #6a6969);
+    width: 50px;
+    text-align: center;
+    border-radius: 100%;
 
 }
 
@@ -275,11 +286,14 @@
     display: block;
     margin-left: 10px;
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #eb0505;
     padding: 10px 15px;
     z-index: 2;
     margin-bottom: 15px;
+    width: 55px;
+    background-image: linear-gradient( #2323235d, #ffffff,  #6a696970);
+    border-radius: 100%;
 }
 
 
@@ -315,13 +329,13 @@ footer .endereco {
 }
 footer .contatos  a,h3 {
    text-decoration: none;
-   color: #eee; 
+ 
    margin-left: 5%;
    
 
 }
 footer .contatos  a i {
-    color: #ffffff; 
+
     background-color: #13a23e;
     padding: 5px;
     border-radius: 50%;
